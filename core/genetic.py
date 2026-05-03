@@ -141,13 +141,15 @@ def run_ga(
     generations: int = 30,
     progress_callback=None,
     stop_flag: callable = None   # Pass lambda: bool; returns True to abort
-) -> tuple[list[dict], list[float]]:
+) -> tuple[list[dict],list[float],list[float]]:
     """
     Run the Genetic Algorithm.
 
     Returns:
         - final population sorted by fitness (best first)
         - history: list of best fitness per generation (for chart)
+        - mutation_history: adaptive mutation rate per generation
+
     """
     population = initial_population[:POPULATION_SIZE]
 

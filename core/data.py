@@ -15,7 +15,7 @@ DOMAINS = {
 
 # ── Performance Attributes ─────────────────────────────────────────────────────
 # Each component contributes to: performance, stability, efficiency, aerodynamics
-# Scale: 0–10
+# Scale: 0–100
 
 COMPONENT_STATS = {
     # Engine: big spread between options so choice matters a lot
